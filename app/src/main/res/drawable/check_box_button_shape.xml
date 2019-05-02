@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+
+
+            <item android:top="-2dp" android:right="-2dp" android:left="-2dp">
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                    <stroke
+                        android:width="2dp"
+                        android:color="#FF0000" />
+                </shape>
+            </item>
+        </layer-list>
+<!--<shape android:shape="line">-->
+            <!--<solid android:color="#ebe61616"/>-->
+            <!--<stroke-->
+                <!--android:width="2dp"-->
+                <!--android:color="#ed4848" />-->
+
+        <!--</shape>-->
+    </item>
+
+
+</selector>

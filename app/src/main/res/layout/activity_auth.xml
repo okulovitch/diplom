@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth_bg"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<TextView
+    android:layout_weight="2"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="90dp"
+    android:textColor="@color/white"
+    android:textSize="25sp"
+    android:text="Welcome to Golden Gate hotel manager!"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+<LinearLayout
+    android:layout_weight="2"
+    android:layout_marginTop="70dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        android:textColorHint="@color/white"
+        android:id="@+id/emailWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:text="pioneer"
+            android:textColorHint="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="android:textColorHint"
+            android:hint="Your's username *"
+            android:backgroundTint="@color/secondary_text"
+            android:textColor="@color/white"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginBottom="20dp"
+        android:id="@+id/passwordWrapper"
+        android:textColorHint="@color/white"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPassword"
+            android:textColorHint="@color/white"
+            android:layout_width="300dp"
+            android:text="Xz2034340"
+            android:layout_height="wrap_content"
+            android:hint="Password *"
+            android:inputType="textPassword"
+            style="android:colorActivated"
+            android:backgroundTint="@color/secondary_text"
+            android:textColor="@color/white"/>
+
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/green_rounded_sqare"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="login"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/grey_rounded_sqare"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+        android:textSize="18sp"
+        android:text="register"/>
+
+
+</LinearLayout>

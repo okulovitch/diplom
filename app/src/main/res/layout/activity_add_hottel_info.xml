@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/depurple_dark"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/depurple_rounded_sqare_shape"
+                android:layout_margin="12dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="add your's hottel"
+                    android:layout_margin="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/hotelPhoneWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etHottelPhone"
+                    android:inputType="phone"
+                    android:text="+375293442125"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Hotel Phone *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/hotelNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etHottelName"
+                    android:text="some hotel"
+                    android:inputType="text"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Hotel Name *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/hotelEmailWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etHottelEmail"
+                    android:inputType="textEmailAddress"
+                    android:text="email@yandex.ru"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Hotel Email *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/locationNameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etLocation"
+                    android:text="Munhen"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Hotel location *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/latitudeWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etlatitude"
+                    android:text="1.23"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="longitude *"
+                    android:inputType="number"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/longitudeWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etLongitude"
+                    android:text="1.34"
+                    android:inputType="number|numberDecimal"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="latitude *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/hotelImageWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etHotelImage"
+                    android:text="some url"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Url for image *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/hottelDescriptionWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etHottelDescription"
+                    android:text="some description for test"
+                    android:textColorHint="@color/white"
+                    android:layout_width="300dp"
+                    android:lines="6"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Description *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/addNewHottel"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/green_rounded_sqare"
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:text="add hottel"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

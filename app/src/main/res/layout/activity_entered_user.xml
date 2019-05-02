@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/depurple_dark">
+
+
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:background="@drawable/search_rounded"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hotRoomsBtn"
+                android:orientation="horizontal"
+                android:background="@drawable/depurple_rounded_sqare_shape"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_fire_white"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Быстрый поиск"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="fill"
+                        android:layout_marginBottom="8dp"
+                        android:text="Узнайте, какие номера сейчас наиболее выгодны "/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hotBtn"
+                android:orientation="horizontal"
+                android:background="@drawable/depurple_rounded_sqare_shape"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_earth_white"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/white"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Поиск отелей"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="fill"
+                        android:layout_marginBottom="8dp"
+                        android:text="Найдите отель максимально подходящий под ваши вкусы"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/globalBtn"
+                android:orientation="horizontal"
+                android:background="@drawable/depurple_rounded_sqare_shape"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_earth_white"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Глобальный поиск"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="fill"
+                        android:layout_marginBottom="8dp"
+                        android:text="Найдите отель максимально подходящий под ваши вкусы "/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/showMapBtn"
+                android:orientation="horizontal"
+                android:background="@drawable/depurple_rounded_sqare_shape"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_travaler_white"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Карта "/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/white"
+                        android:gravity="fill"
+                        android:layout_marginBottom="8dp"
+                        android:text="Постройте маршрут до ближайшего отеля от вас"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

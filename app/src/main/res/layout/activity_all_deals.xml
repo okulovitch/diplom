@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:background="@color/greenHeader"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/backIv"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_white"
+                android:layout_gravity="center_vertical"
+                android:layout_width="10dp"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="on main "
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/donateBtn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/donateIc"
+                android:src="@drawable/icon_doante"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/TitleTv"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/donateIc"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/greyText"
+                android:text="added to favorite hottels there "
+                android:layout_toEndOf="@id/donateIc"
+                android:layout_below="@id/TitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/icon_arrow_right"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="16dp"
+            android:background="@color/lightGrey"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/donateDirectlyIc"
+                android:src="@drawable/icon_doante_directly"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/TitleDirectlyTv"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/donateDirectlyIc"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="how to pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/greyText"
+                android:text="how to pay for hottel"
+                android:layout_toEndOf="@id/donateDirectlyIc"
+                android:layout_below="@id/TitleDirectlyTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/icon_arrow_right"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:background="@color/lightGrey"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+

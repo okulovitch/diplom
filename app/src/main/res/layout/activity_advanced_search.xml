@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hottel_room"
+    tools:context=".ui.AdvancedSearch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/eight_list_item"
+            android:drawableEnd="@drawable/ic_search"
+            android:hint="search hottel by name"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_toStartOf="@id/CheckinL"
+                android:layout_weight="1"
+                android:background="@drawable/eight_list_item"
+                android:onClick="datePickCheckIn"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="2dp"
+                    android:drawableEnd="@drawable/ic_event"
+                    android:text="Check-in"
+                    android:textColor="@color/colorBackground" />
+
+                <TextView
+                    android:id="@+id/dateOfCheckIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="date " />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/CheckinL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/eight_list_item"
+                android:onClick="datePickCheckOut"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="2dp"
+                    android:drawableEnd="@drawable/ic_event"
+                    android:text="Check-out"
+                    android:textColor="@color/colorBackground" />
+
+                <TextView
+                    android:id="@+id/dateOfCheckOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="date" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/eight_list_item"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_bad_for_search"
+                android:padding="10dp"
+                android:text="rooms for audits" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/eight_list_item"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/check_box_button_shape"
+                    android:button="@drawable/check_box_button_shape"
+                    android:drawableBottom="@drawable/check_box_button_shape"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="2dp"
+                    android:text="1 room" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/check_box_button_shape"
+                    android:button="@drawable/check_box_button_shape"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="2dp"
+                    android:text="2 rooms" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/check_box_button_shape"
+                    android:button="@drawable/check_box_button_shape"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="2dp"
+                    android:text="3 rooms" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/check_box_button_shape"
+                    android:button="@drawable/check_box_button_shape"
+                    android:gravity="center_horizontal|bottom"
+                    android:paddingBottom="2dp"
+                    android:text="4 rooms" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/orange_rounded_sqare"
+            android:drawableEnd="@drawable/ic_search"
+            android:text="search"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

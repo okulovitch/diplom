@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_rounded_shape">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_search_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/depurple_rounded_sqare_shape"
+
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hot_room_item">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="8dp"
+            app:riv_corner_radius="80dip"
+            app:riv_border_width="1dip"
+            app:riv_border_color="#f4e9e9"
+            app:riv_mutate_background="true"
+            android:id="@+id/hotRoomImage"
+            android:scaleType="fitXY"
+            android:src="@drawable/hotel1"
+            android:layout_width="60dp"
+            android:layout_centerVertical="true"
+            android:layout_height="60dp" />
+
+        <TextView
+
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/roomLocationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/hotRoomImage"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:text="Location"/>
+
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/hotRoomImage"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/hotRoomImage"
+            android:layout_below="@id/roomLocationTv"
+            android:id="@+id/descriptionTv"
+            android:text="persons:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/descriptionTv"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/descriptionTv"
+            android:layout_below="@id/roomLocationTv"
+            android:id="@+id/personsCountTv"
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/dollarIv"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roomLocationTv"
+            android:paddingRight="14dp"
+            android:layout_toStartOf="@id/descriptionTv"
+            android:background="@drawable/ic_dollar"/>
+
+        <TextView
+            android:id="@+id/defaultTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toStartOf="@id/defaultCostTv"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:text="default cost:"/>
+        <TextView
+            android:id="@+id/withSaleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roomLocationTv"
+            android:textColor="@color/white"
+            android:layout_toStartOf="@id/defaultCostTv"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:text="cost with sale:"/>
+        <TextView
+            android:id="@+id/costWithSaleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@id/roomLocationTv"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/main_gradient_color"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:text="150$"/>
+        <TextView
+            android:id="@+id/defaultCostTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_line_shape"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:text="150$"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

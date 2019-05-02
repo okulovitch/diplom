@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="8dp"
+    android:background="@drawable/eight_list_item"
+    android:layout_width="match_parent"
+    android:padding="6dp"
+    android:layout_height="wrap_content"
+  >
+
+    <TextView
+        android:id="@+id/hottelNameTv"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="hottel name"
+
+        android:layout_height="wrap_content" />
+
+
+
+    <ImageView
+        android:id="@+id/markerIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/marker"
+        android:layout_below="@id/hottelNameTv"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/markerIv"
+        android:layout_below="@id/hottelNameTv"
+        android:textColor="@color/black"
+        android:text="millage"/>
+
+
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/hottelNameTv"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+        android:layout_toStartOf="@id/favoriteIc"
+        android:autoSizeTextType="none"
+        android:text="15000000000000000000000000000000000000$"/>
+
+        <CheckBox
+            android:layout_alignParentEnd="true"
+            android:id="@+id/favoriteIc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/favorite_button_shape"
+            android:layout_margin="8dp"/>
+
+</RelativeLayout>

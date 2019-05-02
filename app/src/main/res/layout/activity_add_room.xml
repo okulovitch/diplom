@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/depurple_dark"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@drawable/depurple_rounded_sqare_shape"
+                android:layout_margin="12dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="add room"
+                    android:layout_margin="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/hotelPhoneWrapper"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etRoomNumber"
+                    android:inputType="number"
+                    android:text="273"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Room Number *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/PersonsCountWrapper"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etPersonsCount"
+                    android:text="3"
+                    android:inputType="text"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Persons count *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/costForNightWrapper"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etCostForNight"
+                    android:inputType="number"
+                    android:text="45"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Cost for Night *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/costWithSaleWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etCostWithSale"
+                    android:text="18"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Cost with sale*"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/white"
+                android:id="@+id/hotelImageWrapper"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:id="@+id/etRoomImage"
+                    android:text="some url"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:gravity="bottom"
+                    android:layout_height="wrap_content"
+                    style="android:textColorHint"
+                    android:hint="Url for image *"
+                    android:backgroundTint="@color/secondary_text"
+                    android:textColor="@color/white"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <RadioGroup
+                android:layout_marginTop="16dp"
+                android:id="@+id/rgIsHot"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_weight="0.9"
+                    android:text="is Hot"
+                    android:id="@+id/rbIsHot"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="1dp"
+                    android:button="@drawable/radio_selector"
+                    android:background="@drawable/half_button_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rbNotHot"
+                    android:layout_weight="0.9"
+                    android:text="not Hot"
+                    android:textColor="@drawable/radio_text_selector"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:padding="10dp"
+                    android:button="@drawable/radio_selector"
+                    android:background="@drawable/half_button_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+
+
+            <Button
+                android:id="@+id/btnAddNewHotelRoom"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/green_rounded_sqare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="24dp"
+                android:text="add room"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

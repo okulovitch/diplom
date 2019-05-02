@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">diplomaHotelReserv</string>
+    <string name="sign_up">Sign up</string>
+    <string name="confirm_password">confirm password *</string>
+    <string name="notEmpty">field must be no empty</string>
+    <string name="notEquals">pasword is not equals</string>
+    <string name="badPass">need password more then 6 symbols</string>
+    <string name="firstName">first name shuld consist from laters</string>
+    <string name="emailIncorect">email is invalid now</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="phone_number">Phone number*</string>
+    <string name="phoneInvalide">use standart phone format</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="userName">user name must consist from laters A-z</string>
+
+    <string name="store_name" translatable="false">My Online Store</string>
+    <string name="googlepay_status_unavailable" translatable="false">Unfortunately, Google Pay is not available on this phone.</string>
+    <string name="googlepay_status_checking" translatable="false">Checking if Google Pay is available...</string>
+    <string name="payments_show_name" translatable="false">Successfully received payment data for %s!</string>
+</resources>

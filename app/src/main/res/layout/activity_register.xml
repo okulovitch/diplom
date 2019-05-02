@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@drawable/register_back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:title="on Login"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Create new profile"
+                    android:textColor="@color/white"
+                    android:textSize="32dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="pleace fill all filds"
+                    android:textColor="#FFAFAEAE"
+                    android:textSize="23dp"
+                    android:layout_marginBottom="30dp"
+                    />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/UserNameWrapper"
+                    android:textColorHint="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:id="@+id/etUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First name*"
+                        style="android:textColorHint"
+                        android:backgroundTint="@color/secondary_text"
+                        android:textColor="@color/white" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/FirstNameWraper"
+                    android:textColorHint="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:id="@+id/etFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="User name*"
+                        style="android:textColorHint"
+                        android:backgroundTint="@color/secondary_text"
+                        android:textColor="@color/white" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/EmailWrapper"
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:id="@+id/etEmailRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your e-mail *"
+                        style="android:textColorHint"
+                        android:backgroundTint="@color/secondary_text"
+                        android:textColor="@color/white"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PasswordWrapper"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:id="@+id/etPasswordRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="password *"
+                        style="android:textColorHint"
+                        android:inputType="textPassword"
+                        android:backgroundTint="@color/secondary_text"
+                        android:textColor="@color/white"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/PasswordCheckWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textColorHint="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:id="@+id/etPasswordCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="@string/confirm_password"
+                        style="android:textColorHint"
+                        android:backgroundTint="@color/secondary_text"
+                        android:textColor="@color/white"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                <Button
+                    android:id="@+id/onLoginBtn"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/sign_up"
+                    android:background="@drawable/green_rounded_sqare"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
